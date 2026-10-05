@@ -39,6 +39,34 @@ Zlearning 使用 MAPS 作为内部推演框架，但不要求正文机械套用�
 - **范围回归**：改善呈现不等于扩大知识范围。
 - **双语等值与交付验收**：检查技术密度、结构、Office 可用性、视觉质量、版本和哈希。
 
+### 使用时需要提供什么
+
+最低只需提供 **主题或任务**，例如“解释 RAID 5”或“把这些资料做成新手课程”。为了让结果更贴合实际，建议同时提供：
+
+1. **主题与目标**：希望解释、改写、整合、审计还是生成完整课程；
+2. **学习者**：受众角色、已有基础及工作场景；
+3. **来源材料**：Word、PDF、PPT、网页、现有课程或指定参考资料；没有材料时也可直接说明主题；
+4. **范围与边界**：必须保留、需要删除、不要展开的内容，以及适用产品/版本；
+5. **语言与交付格式**：中文、英文或双语，以及 Word、PDF、PPT 或仅聊天回答；
+6. **深度与用途**：快速认识、系统自学、课堂培训、认证考试或技术支持；
+7. **特别要求**：案例、练习、答案、页数、品牌风格、截止时间等。
+
+信息不完整时，Zlearning 会先使用已知内容推进；只有缺失项会显著改变课程范围或交付方式时才提问。涉及完整课程且用户未指定格式时，默认规则如下。
+
+### 最简使用 Prompt
+
+```text
+请使用 Zlearning 处理以下任务：
+主题/任务：[要解释或制作的内容]
+学习者：[受众及基础]
+来源材料：[文件或链接；没有可写“无”]
+必须保留：[核心范围]
+不要展开：[排除范围]
+语言与格式：[例如：英文 Word]
+用途与深度：[例如：新人自学课程]
+其他要求：[案例、练习、产品版本等]
+```
+
 ### 默认交付规则
 
 完整课程默认生成两个独立的 Word 主版本：中文版和英文版。正式生成前确认是否同时需要 PDF 与 PPT/PPTX。不同语言和格式应共享同一内容基线、术语表、技术结论、案例参数和练习范围。
@@ -79,6 +107,34 @@ Zlearning uses MAPS as an internal reasoning framework without forcing a repetit
 - **Capability progression** covers Recognize, Explain, Reconstruct, and Troubleshoot.
 - **Scope regression** ensures presentation improvements do not expand the approved knowledge scope.
 - **Bilingual and delivery validation** checks technical depth, structure, Office usability, visual quality, versions, and hashes.
+
+### What to Provide
+
+At minimum, provide a **topic or task**, such as “Explain RAID 5” or “Turn these references into a beginner course.” For a more targeted result, include:
+
+1. **Topic and objective** — explain, rewrite, consolidate, audit, or create a complete course;
+2. **Learners** — audience roles, prior knowledge, and work context;
+3. **Source material** — Word, PDF, PPT, web pages, existing courses, or named references; a topic alone is also acceptable;
+4. **Scope and boundaries** — required content, exclusions, depth limits, and applicable product/version;
+5. **Language and deliverable** — Chinese, English, or bilingual; Word, PDF, PPT, or chat only;
+6. **Depth and use** — quick introduction, self-study, instructor-led training, certification, or support enablement;
+7. **Special requirements** — cases, exercises, answer keys, length, brand style, deadline, and similar constraints.
+
+If information is incomplete, Zlearning proceeds with what is known and asks only when a missing choice would materially change the scope or deliverable.
+
+### Minimal Usage Prompt
+
+```text
+Use Zlearning for this task:
+Topic/task: [what to explain or create]
+Learners: [audience and prior knowledge]
+Source material: [files or links; write “none” if unavailable]
+Must include: [core scope]
+Do not expand: [excluded scope]
+Language and format: [for example, English Word]
+Purpose and depth: [for example, beginner self-study course]
+Other requirements: [cases, exercises, product version, and so on]
+```
 
 ### Default Delivery
 
