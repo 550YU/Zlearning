@@ -84,27 +84,21 @@ Zlearning uses MAPS as an internal reasoning framework without forcing a repetit
 
 A complete course normally produces two independent Word baselines: one Chinese and one English. PDF and PPT/PPTX outputs are confirmed before production. Every language and format must share the same content baseline, terminology, technical conclusions, case parameters, and exercise scope.
 
-## 安装 / Installation
+## 一句话安装 / Install with One Prompt
 
-### 项目级安装 / Project-level installation (recommended)
+无需手动执行命令。将下面整段 Prompt 复制到具备文件和终端操作能力的 AI 编程工具中即可：
 
 ```text
-.github/
-└── skills/
-    └── Zlearning/
-        ├── SKILL.md
-        └── references/
+请把 https://github.com/550YU/Zlearning 的最新 main 分支安装为当前项目的项目级 AI Skill。先检查当前项目已有的 Skill 目录规范；如果没有明确规范，就安装到 .github/skills/Zlearning。下载并保留完整的 SKILL.md 和 references 目录。若目标位置已有不同内容，先创建带时间戳的备份，禁止直接覆盖。安装后核对文件列表，并验证所有文件可读取、SKILL.md 存在且 SHA-256 校验无复制差异。不要删除用户级原件，也不要把临时下载目录或嵌套的 .git 目录留在项目中。最后报告安装路径、文件数、版本或提交号和验证结果。
 ```
 
-```bash
-git clone https://github.com/550YU/Zlearning.git .github/skills/Zlearning
+Copy the following prompt into an AI coding tool that can access files and run terminal commands:
+
+```text
+Install the latest main branch of https://github.com/550YU/Zlearning as a project-level AI Skill in the current project. First detect and follow any existing project Skill-directory convention; if none exists, install it at .github/skills/Zlearning. Preserve the complete SKILL.md file and references directory. If the destination already contains different content, create a timestamped backup before replacing anything. After installation, compare the file list, confirm that every file is readable, verify that SKILL.md exists, and use SHA-256 hashes to ensure the copied files match. Do not remove any user-level installation, and do not leave a temporary download directory or nested .git directory in the project. Finally report the installation path, file count, installed version or commit, and validation result.
 ```
 
-### 用户级安装 / User-level installation
-
-将仓库内容复制到 Copilot 用户 Skills 目录中的 `Zlearning` 文件夹。实际路径取决于本机配置。
-
-Copy the repository into a `Zlearning` folder under your Copilot user Skills directory. The exact path depends on your local Copilot configuration.
+> The AI tool must have permission to access the project files and GitHub. / AI 工具需要具备项目文件与 GitHub 访问权限。
 
 ## 使用示例 / Example Prompts
 
